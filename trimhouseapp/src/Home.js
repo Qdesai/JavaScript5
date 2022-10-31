@@ -1,3 +1,9 @@
 import React, {useState} from "react";
 
-<h1>Trim House Home Page</h1>
+
+export default function Home(props){
+
+    return(
+        <h1>Trim House Home Page</h1>
+    )
+}
