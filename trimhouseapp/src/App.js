@@ -1,12 +1,25 @@
-import './App.css';
-import Home from './Home';
-import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from './Components/Navbar';
+import {Route, Routes} from "react-router-dom";
+import Login from "./Components/Login";
+import Home from "./Components/Home";
+import { useState } from "react";
 
 function App() {
+  const [status, setStatus] = useState(false);
+
+  const authenticate = ()=>{
+    setStatus(true)
+  }
+
+  const logout = ()=>{
+    setStatus(false)
+  }
+
   return (
-    <div className="App">
-      <Navbar/>
+    <div>
+      <Routes>
+        <Route path="/" element={<Login auth={authenticate}/>} />
+        <Route path="/home" element={<Home logout={logout} status={status}/>} />
+      </Routes>
     </div>
   );
 }
