@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
 export default function Home(props) {
- /*  const navigate = useNavigate();
+   const navigate = useNavigate();
 
   const handleClick = () => {
     console.log("SOmething Happened");
@@ -20,22 +20,11 @@ export default function Home(props) {
         navigate("/")
     }
   }, []);
- */
+ 
   return (
     <>
     <Navbar/>
-      {/* <Row>
-        <Col xl={24}>
-          <h1>Home page</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Button type="primary" onClick={handleClick}>
-            Logout
-          </Button>
-        </Col>
-      </Row> */}
+    
     </>
   );
 }

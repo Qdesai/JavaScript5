@@ -22,9 +22,9 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Login auth={authenticate}/>} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home logout={logout} status={status}/>} />
         <Route path="/profile" element={<Profile logout={logout} status={status}/>} />
-        <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/contactus" element={<ContactUs logout={logout} status={status}/>} />
       </Routes>
     </div>
   );
