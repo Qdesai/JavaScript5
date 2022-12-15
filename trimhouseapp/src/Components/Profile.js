@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
-export default function Home(props) {
- /*  const navigate = useNavigate();
+export default function Profile(props){
+  const navigate = useNavigate();
 
   const handleClick = () => {
     console.log("SOmething Happened");
@@ -20,22 +20,20 @@ export default function Home(props) {
         navigate("/")
     }
   }, []);
- */
-  return (
-    <>
-    <Navbar/>
-      {/* <Row>
-        <Col xl={24}>
-          <h1>Home page</h1>
-        </Col>
-      </Row>
+
+    return(
+<div>
+<Navbar/>
+<h1>This is the Profiles Page </h1>
       <Row>
         <Col>
           <Button type="primary" onClick={handleClick}>
             Logout
           </Button>
         </Col>
-      </Row> */}
-    </>
-  );
+      </Row>
+
+</div>
+
+    );
 }
