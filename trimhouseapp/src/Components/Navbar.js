@@ -1,6 +1,7 @@
 import { Row, Col, Button } from "antd";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../Images/logo.png";
 import Home from "./Home";
 import React from 'react'
 
@@ -20,8 +21,8 @@ export default function Navbar(){
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <img src="logo.png" alt="no imge"/>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{backgroundColor: "lightblue"}}>
+  <img src={logo} width="50px" alt="no imge"/>
   <a className="navbar-brand" href="#">TrimHouse</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
