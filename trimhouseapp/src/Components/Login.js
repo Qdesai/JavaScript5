@@ -1,6 +1,9 @@
+import "./Login.css";
 import { Button, Checkbox, Form, Input, Row, Col } from "antd";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import bgimg from "../Images/BgL.jpeg";
+
 const Login = (props) => {
   const navigate = useNavigate();
 
@@ -16,6 +19,7 @@ const Login = (props) => {
     console.log("Failed:", errorInfo);
   };
   return (
+
     <Row style={{ marginTop: "30px" }}>
       <Col span={8} offset={6}>
         <Form
