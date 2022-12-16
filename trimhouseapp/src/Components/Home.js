@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Caro from "./Caro";
 import List from "./List.js";
-import "./Home.css"
+import "./Home.css";
 
 
 export default function Home(props) {

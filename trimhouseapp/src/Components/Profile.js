@@ -25,7 +25,7 @@ export default function Profile(props){
       
 <div>
 <Navbar/>
-<h1>This is the Profiles Page </h1>
+
       <Row>
         <Col>
           <Button type="primary" onClick={handleClick}>

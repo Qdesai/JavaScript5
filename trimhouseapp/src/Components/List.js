@@ -1,10 +1,13 @@
+import "./L.css";
 import React from 'react';
 import { Button, Card, Col, Row} from 'antd';
 const { Meta } = Card;
 
 
+
 const List = () => (
     <div className="site-card-wrapper">
+        <h1><center style={{marginTop:340, color:"black"}}>Category List </center></h1>
     <Row gutter={16} style={{marginLeft:120}}>
       <Col span={8}>
       <Card
