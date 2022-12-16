@@ -34,7 +34,7 @@ return(
     </div>
     <div>
     <img src={im4} style={contentStyle} alt="no image" />
-    </div>
+    </div>  
   </Carousel>
     </>
 );

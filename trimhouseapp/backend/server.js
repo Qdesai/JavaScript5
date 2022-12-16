@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 
 const prodRoute = require('./routes/products');
 
+app.use(bodyParser.json());
 app.use('/products', prodRoute);
 
 app.get('/test', (req,res)=>{
