@@ -22,6 +22,7 @@ export default function Profile(props){
   }, []);
 
     return(
+      
 <div>
 <Navbar/>
 <h1>This is the Profiles Page </h1>

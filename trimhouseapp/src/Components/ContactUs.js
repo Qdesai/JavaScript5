@@ -1,14 +1,32 @@
+import "./ContactUs.css";
 import React from "react";
 import { Row, Col, Button, Form, Input } from 'antd';
 import Navbar from "./Navbar";
 import { UserOutlined, MailOutlined } from '@ant-design/icons';
-import { Header } from "antd/es/layout/layout";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const { TextArea } = Input;
 
 
 
 export default function ContactUs(props){
+    const navigate = useNavigate();
 
+    const handleClick = () => {
+      console.log("SOmething Happened");
+      props.logout();
+      navigate("/");
+    };
+  
+    useEffect(() => {
+      if(props.status){
+          console.log("Authentication successfull")
+      }
+      else{
+          navigate("/")
+      }
+    }, []);
+    
     const handleSubmit = (values) => {
         console.log('Form Submited')
     }
@@ -17,6 +35,8 @@ export default function ContactUs(props){
         <>
             
             <Navbar/>
+
+            <div>
         <Row
             justify="space-around"
         >
@@ -89,7 +109,7 @@ export default function ContactUs(props){
                 </Form>
             </Col>
         </Row>
-
+        </div>
     </>
         
     )

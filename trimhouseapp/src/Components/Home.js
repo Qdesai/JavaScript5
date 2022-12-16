@@ -2,6 +2,8 @@ import { Row, Col, Button } from "antd";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import Caro from "./Caro";
+
 
 export default function Home(props) {
    const navigate = useNavigate();
@@ -21,10 +23,11 @@ export default function Home(props) {
     }
   }, []);
  
+
   return (
     <>
     <Navbar/>
-    
+    <Caro/>
     </>
   );
 }

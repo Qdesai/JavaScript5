@@ -19,7 +19,6 @@ const Login = (props) => {
     console.log("Failed:", errorInfo);
   };
   return (
-
     <Row style={{ marginTop: "30px" }}>
       <Col span={8} offset={6}>
         <Form
