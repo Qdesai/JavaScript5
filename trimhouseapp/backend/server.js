@@ -2,6 +2,7 @@ const express = require('express');
 const { default: mongoose } = require('mongoose');
 const app = express();
 const monsooge = require('mongoose');
+const bodyParser = require('body-parser');
 
 
 const prodRoute = require('./routes/products');
